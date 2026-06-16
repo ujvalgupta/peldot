@@ -15,8 +15,6 @@ await page.evaluate(async () => {
 await page.waitForTimeout(800);
 
 const data = await page.evaluate(() => {
-  const anchors = ["SIGNAL PERFORMANCE", "Executive Mandate", "Citigroup", "Satellogic", "whitewhale-alerts", "SIGN UP", "EXECUTIVE MANDATE"];
-  const results = [];
   const nonWhite = (c) => c && c !== "rgba(0, 0, 0, 0)" && c !== "rgb(255, 255, 255)";
 
   // collect all colored backgrounds with a blue-ish or tinted hue
