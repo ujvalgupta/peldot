@@ -42,7 +42,7 @@ export default async function BlogPostPage({
           <span className="text-[#9a9a9a]">{post.date}</span>
           {post.author && <span className="text-[#9a9a9a]">· by {post.author}</span>}
         </div>
-        <h1 className="heading-display mt-5 text-[36px] font-bold leading-[1.1] text-[#0a0a0a] sm:text-[48px]">
+        <h1 className="heading-hero mt-5 text-[36px] font-bold leading-[1.1] text-[#0a0a0a] sm:text-[48px]">
           {post.title}
         </h1>
         <p className="mt-5 text-[19px] leading-[1.5] text-[#5b5b5b]">{post.excerpt}</p>

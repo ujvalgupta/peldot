@@ -25,7 +25,7 @@ export default function MeridianCaseStudy() {
         <p className="mt-6 text-[13px] font-bold uppercase tracking-[0.08em] text-ww-accent-blue">
           Meridian Business
         </p>
-        <h1 className="heading-display mt-4 text-[36px] font-bold leading-[1.1] text-[#0a0a0a] sm:text-[48px]">
+        <h1 className="heading-hero mt-4 text-[36px] font-bold leading-[1.1] text-[#0a0a0a] sm:text-[48px]">
           ROI in 5 days with custom buying signals
         </h1>
 
