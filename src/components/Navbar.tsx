@@ -54,9 +54,9 @@ export function Navbar() {
                     className="flex items-center gap-1 text-[15px] font-medium text-[#4b4b4b] transition-colors hover:text-[#0a0a0a]"
                   >
                     {link.label}
-                    <ChevronDownIcon className="h-4 w-4" />
+                    <ChevronDownIcon className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
                   </Link>
-                  <div className="invisible absolute left-1/2 top-full -translate-x-1/2 pt-3 opacity-0 transition-all group-hover:visible group-hover:opacity-100">
+                  <div className="invisible absolute left-1/2 top-full -translate-x-1/2 translate-y-1 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
                     <div className="min-w-[200px] rounded-xl border border-hairline bg-white p-2 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.25)]">
                       {link.dropdown.map((sub) => (
                         <Link

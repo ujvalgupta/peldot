@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "@/components/Reveal";
 import { ChevronDownIcon } from "@/components/icons";
@@ -72,9 +73,19 @@ function AccordionItem({ item }: { item: { question: string; answer: string } })
         />
         <span className="text-[18px] font-bold text-[#0a0a0a]">{item.question}</span>
       </button>
-      {open && (
-        <p className="pb-5 pl-8 pr-4 text-[16px] leading-[1.6] text-[#5b5b5b]">{item.answer}</p>
-      )}
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
+            className="overflow-hidden"
+          >
+            <p className="pb-5 pl-8 pr-4 text-[16px] leading-[1.6] text-[#5b5b5b]">{item.answer}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
