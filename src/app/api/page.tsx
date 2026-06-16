@@ -25,7 +25,7 @@ const UPLOAD_EXAMPLE = `POST /v1/signals/account.upload
     {
       "type": "ma_activity",
       "summary": "Acquired AI diagnostics startup",
-      "source": "https://sec.gov/...",
+      "source": "https://filings.example.com/...",
       "confidence": 0.94
     },
     {

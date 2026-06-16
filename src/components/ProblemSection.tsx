@@ -9,7 +9,7 @@ const GETTING_NOW = [
   "The exact same signals your 3 biggest competitors bought",
 ];
 
-const WHITEWHALE_GIVES = [
+const PELDOT_GIVES = [
   "Custom signals you write in your own words",
   "Verifiable events with linked, quoted sources",
   '"Why now" stories that combine multiple signals per account',
@@ -53,7 +53,7 @@ export function ProblemSection() {
               What Peldot gives you
             </p>
             <ul>
-              {WHITEWHALE_GIVES.map((item, i) => (
+              {PELDOT_GIVES.map((item, i) => (
                 <li
                   key={i}
                   className="border-b border-hairline/70 py-4 text-[16px] font-medium text-[#0a0a0a] last:border-0"

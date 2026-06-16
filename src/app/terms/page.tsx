@@ -28,7 +28,7 @@ export default function TermsPage() {
         { heading: "Dispute Resolution", body: "Mandates negotiation, then mediation, then binding arbitration in Oakland County, Michigan." },
         { heading: "Severability, Waiver & Counterparts", body: "Invalid provisions don't void the agreement; waivers require written consent." },
         { heading: "Relationship of the Parties", body: "Establishes independent contractor status without partnership." },
-        { heading: "Contact Information", body: "Lists our Ann Arbor office address and communication channels." },
+        { heading: "Contact Information", body: "Lists our office address and communication channels." },
       ]}
     />
   );

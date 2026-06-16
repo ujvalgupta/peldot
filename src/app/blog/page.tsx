@@ -19,7 +19,7 @@ interface Post {
 
 const POSTS: Post[] = [
   {
-    slug: "Maily-partners-with-whitewhale",
+    slug: "maily-partners-with-peldot",
     title: "Maily partners with Peldot",
     excerpt: "Europe's leading GTM tool partners with Peldot.",
     category: "Company",
@@ -41,7 +41,7 @@ const POSTS: Post[] = [
     date: "Jun 9, 2025",
   },
   {
-    slug: "whitewhale-vs-Sensora",
+    slug: "peldot-vs-sensora",
     title: "Peldot vs Sensora",
     excerpt: "How custom buying signals with verifiable sources compare to traditional intent data.",
     category: "Comparison",

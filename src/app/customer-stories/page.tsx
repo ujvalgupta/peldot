@@ -49,7 +49,7 @@ const STORIES: Story[] = [
     quote:
       "Peldot helped us stop chasing digital noise and start seeing real opportunity. It's like having a radar that tells you when and where to make your move.",
     metrics: [
-      { value: "5 DAYS", caption: "TO ROI AFTER SIGNING UP FOR WHITEWHALE." },
+      { value: "5 DAYS", caption: "TO ROI AFTER SIGNING UP FOR PELDOT." },
       { value: "2,800", caption: "ACCOUNTS PRIORITIZED IN JUST 24 HOURS." },
     ],
     href: "/customer-stories/arcwell-case-study",
@@ -221,7 +221,7 @@ export default function CustomerStoriesPage() {
         </div>
       </section>
 
-      {/* Zero-risk + slack mock */}
+      {/* Zero-risk + alert mock */}
       <section className="bg-surface-alt">
         <div className="mx-auto grid max-w-[1080px] items-center gap-12 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-2">
           <Reveal>

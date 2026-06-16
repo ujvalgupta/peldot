@@ -111,7 +111,7 @@ const INTEGRATIONS: Record<string, Integration> = {
       </>
     ),
     sectionBody:
-      "Give Atlas direct access to your Peldot intelligence. Instantly pull SEC quotes, evaluate target accounts, and generate personalized outreach — all in one chat interface. By bringing Peldot into Atlas Desktop you eliminate context switching and dramatically increase execution speed.",
+      "Give Atlas direct access to your Peldot intelligence. Instantly pull regulatory quotes, evaluate target accounts, and generate personalized outreach — all in one chat interface. By bringing Peldot into Atlas Desktop you eliminate context switching and dramatically increase execution speed.",
     benefits: [
       { title: "Daily Prioritization", body: "Get ranked account lists with exact buying triggers and source quotes, ready for action." },
       { title: "No-Code Configuration", body: "Manage the entire setup via chat — upload lists, adjust signal weights, create ICP segments without dashboards." },
