@@ -1,9 +1,25 @@
+import { Hero } from "@/components/Hero";
+import { LogoStrip } from "@/components/LogoStrip";
+import { DemoSection } from "@/components/DemoSection";
+import { ProblemSection } from "@/components/ProblemSection";
+import { FeaturesSection } from "@/components/FeaturesSection";
+import { Testimonials } from "@/components/Testimonials";
+import { CommonTraits } from "@/components/CommonTraits";
+import { Faq } from "@/components/Faq";
+import { CtaSection } from "@/components/CtaSection";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <p className="text-muted-foreground">
-        Clone target not yet built. Run <code className="font-mono text-foreground">/clone-website</code> to start.
-      </p>
-    </main>
+    <>
+      <Hero />
+      <LogoStrip />
+      <DemoSection />
+      <ProblemSection />
+      <FeaturesSection />
+      <Testimonials />
+      <CommonTraits />
+      <Faq />
+      <CtaSection />
+    </>
   );
 }
