@@ -4,7 +4,7 @@ import { CtaSection } from "@/components/CtaSection";
 import { CheckIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Signals API — WhiteWhale",
+  title: "Signals API — Peldot",
   description:
     "Programmatic access to custom buying signals, verifiable source data, and account narratives. Built for automation agencies, AI agents, and custom internal platforms.",
 };
@@ -20,7 +20,7 @@ function Code({ children }: { children: React.ReactNode }) {
 const UPLOAD_EXAMPLE = `POST /v1/signals/account.upload
 
 {
-  "domain": "moderna.com",
+  "domain": "helixabio.com",
   "signals": [
     {
       "type": "ma_activity",
@@ -38,9 +38,9 @@ const UPLOAD_EXAMPLE = `POST /v1/signals/account.upload
 }`;
 
 const ARCHITECTURES = [
-  { name: "Why & Who Sync", flow: "WhiteWhale → Clay → HubSpot" },
-  { name: "Campaign Orchestration", flow: "WhiteWhale → Claude → Apollo" },
-  { name: "Enterprise Routing", flow: "WhiteWhale → Salesforce → Salesloft" },
+  { name: "Why & Who Sync", flow: "Peldot → Tablr → Hubly" },
+  { name: "Campaign Orchestration", flow: "Peldot → Atlas → Prospra" },
+  { name: "Enterprise Routing", flow: "Peldot → Forcely → Selene" },
 ];
 
 const METHODS = [
@@ -111,10 +111,10 @@ export default function ApiPage() {
           </h2>
           <p className="mt-5 max-w-[620px] text-[17px] leading-[1.55] text-[#5b5b5b]">
             Configure webhooks to push payloads the moment a target account triggers a new signal —
-            compatible with Clay Workflows, AI Agents (LLM), engagement platforms, and custom systems.
+            compatible with Tablr Workflows, AI Agents (LLM), engagement platforms, and custom systems.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            {["Clay Workflows", "AI Agents (LLM)", "Engagement Platforms", "Custom Systems"].map((t) => (
+            {["Tablr Workflows", "AI Agents (LLM)", "Engagement Platforms", "Custom Systems"].map((t) => (
               <span key={t} className="rounded-full border border-hairline bg-white px-4 py-2 text-[14px] font-medium text-[#1c1c1c]">
                 {t}
               </span>
@@ -150,7 +150,7 @@ export default function ApiPage() {
                 Trust your agents with <strong className="font-bold">factual sources.</strong>
               </h2>
               <p className="mt-5 max-w-[480px] text-[17px] leading-[1.55] text-[#5b5b5b]">
-                Native Model Context Protocol support for Claude Code and proprietary LLMs, exposed
+                Native Model Context Protocol support for Atlas Code and proprietary LLMs, exposed
                 as native tool calls.
               </p>
             </div>

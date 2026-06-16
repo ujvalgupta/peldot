@@ -11,7 +11,7 @@
   --font-mono: ui-monospace, monospace;
   --font-heading: var(--font-inter), "Inter", ui-sans-serif, system-ui, sans-serif;
 
-  /* WhiteWhale brand palette */
+  /* Peldot brand palette */
   --color-ink: var(--ink);
   --color-ww-blue: var(--ww-blue);
   --color-ww-green: var(--ww-green);
@@ -59,7 +59,7 @@
 }
 
 :root {
-  /* WhiteWhale tokens (from getComputedStyle) */
+  /* Peldot tokens (from getComputedStyle) */
   --ink: #1c1c1c;                 /* dark buttons / logo ink */
   --ww-blue: #2b7bb9;             /* feature cards */
   --ww-green: #10b981;            /* success / win-rate / "accounts found" */

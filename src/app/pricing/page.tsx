@@ -7,7 +7,7 @@ import { InlineTestimonial } from "@/components/InlineTestimonial";
 import { CheckIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Pricing — WhiteWhale",
+  title: "Pricing — Peldot",
   description:
     "Unlimited users, one flat monthly fee. Unlimited account suggestions, all integrations, included with every plan.",
 };
@@ -56,8 +56,8 @@ const FEATURES: { label: string; values: [string, string, string] }[] = [
   { label: "Account Suggestions", values: ["✓", "✓", "✓"] },
   { label: "“Why Now” Narrative Generation", values: ["✓", "✓", "✓"] },
   { label: "Closed-Won Signal Analysis", values: ["✓", "✓", "✓"] },
-  { label: "Slack Alerts (+ Microsoft Teams Available)", values: ["✓", "✓", "✓"] },
-  { label: "CRM Sync (HubSpot / Salesforce)", values: ["✓", "✓", "✓"] },
+  { label: "Pingr Alerts (+ Teamspacepace Available)", values: ["✓", "✓", "✓"] },
+  { label: "CRM Sync (Hubly / Forcely)", values: ["✓", "✓", "✓"] },
   { label: "API Access", values: ["✓", "✓", "✓"] },
   { label: "Custom Source Scraping", values: ["✓", "✓", "✓"] },
   { label: "Delivery Frequency", values: ["Weekly", "Daily Available", "Daily Available"] },
@@ -174,10 +174,9 @@ export default function PricingPage() {
       {/* Testimonial */}
       <Reveal as="section" className="mx-auto max-w-[1080px] px-5 py-12 sm:px-8 sm:py-16">
         <InlineTestimonial
-          quote={"“It's a no-brainer. You close one deal and it's paid for itself. If you try to track this on your own, you're going to miss stuff. You miss a lot less with WhiteWhale.”"}
-          name="Justin Ager"
-          role="Strategic Growth Manager, Kaleris"
-          poster="/images/testimonial-justin.png"
+          quote={"“It's a no-brainer. You close one deal and it's paid for itself. If you try to track this on your own, you're going to miss stuff. You miss a lot less with Peldot.”"}
+          name="Marcus Vale"
+          role="Strategic Growth Manager, Vantora"
         />
       </Reveal>
 
@@ -187,7 +186,7 @@ export default function PricingPage() {
           <div className="max-w-[640px]">
             <h2 className="text-[22px] font-bold text-[#0a0a0a] sm:text-[26px]">GTM Agency?</h2>
             <p className="mt-3 text-[16px] leading-[1.55] text-[#5b5b5b]">
-              Build your clients&rsquo; automated outbound pipelines on WhiteWhale&rsquo;s
+              Build your clients&rsquo; automated outbound pipelines on Peldot&rsquo;s
               infrastructure. Multi-tenant management, API routing, and dedicated technical support.
             </p>
           </div>

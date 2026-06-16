@@ -50,7 +50,7 @@ export function ProblemSection() {
           </div>
           <div className="p-8 sm:p-10">
             <p className="mb-6 text-[12px] font-semibold uppercase tracking-[0.08em] text-[#0a0a0a]">
-              What WhiteWhale gives you
+              What Peldot gives you
             </p>
             <ul>
               {WHITEWHALE_GIVES.map((item, i) => (
@@ -68,10 +68,9 @@ export function ProblemSection() {
         {/* Inline testimonial */}
         <Reveal className="mt-20">
           <InlineTestimonial
-            quote={"“It's a no-brainer. You close one deal and it's paid for itself. If you try to track this on your own, you're going to miss stuff. You miss a lot less with WhiteWhale.”"}
-            name="Justin Ager"
-            role="Strategic Growth Manager, Kaleris"
-            poster="/images/testimonial-justin.png"
+            quote={"“It's a no-brainer. You close one deal and it's paid for itself. If you try to track this on your own, you're going to miss stuff. You miss a lot less with Peldot.”"}
+            name="Marcus Vale"
+            role="Strategic Growth Manager, Vantora"
           />
         </Reveal>
       </div>

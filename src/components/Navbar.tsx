@@ -16,11 +16,11 @@ const RESOURCES: SubLink[] = [
 ];
 
 const INTEGRATIONS: SubLink[] = [
-  { label: "HubSpot", href: "/integrations/hubspot" },
-  { label: "Salesforce", href: "/integrations/salesforce" },
-  { label: "Slack", href: "/integrations/slack" },
-  { label: "Clay", href: "/integrations/clay" },
-  { label: "MCP / Claude", href: "/integrations/mcp" },
+  { label: "Hubly", href: "/integrations/hubly" },
+  { label: "Forcely", href: "/integrations/forcely" },
+  { label: "Pingr", href: "/integrations/pingr" },
+  { label: "Tablr", href: "/integrations/tablr" },
+  { label: "MCP / Atlas", href: "/integrations/atlas" },
 ];
 
 const NAV_LINKS: NavLink[] = [
@@ -28,7 +28,7 @@ const NAV_LINKS: NavLink[] = [
   { label: "API", href: "/api" },
   { label: "Partners", href: "/partner" },
   { label: "Resources", href: "/customer-stories", dropdown: RESOURCES },
-  { label: "Integrations", href: "/integrations/hubspot", dropdown: INTEGRATIONS },
+  { label: "Integrations", href: "/integrations/hubly", dropdown: INTEGRATIONS },
 ];
 
 export function Navbar() {
@@ -42,7 +42,7 @@ export function Navbar() {
           <Link href="/" className="flex items-center gap-2">
             <WhaleMarkIcon className="h-7 w-7" />
             <span className="text-[22px] font-bold tracking-tight text-[#0a0a0a]">
-              WhiteWhale
+              Peldot
             </span>
           </Link>
           <nav className="hidden items-center gap-6 lg:flex">
@@ -86,7 +86,7 @@ export function Navbar() {
         {/* Right: login + CTA */}
         <div className="hidden items-center gap-5 lg:flex">
           <a
-            href="https://app.getwhitewhale.com"
+            href="https://app.peldot.com"
             className="text-[15px] font-medium text-[#4b4b4b] transition-colors hover:text-[#0a0a0a]"
           >
             Login
@@ -144,7 +144,7 @@ export function Navbar() {
                 )}
               </div>
             ))}
-            <a href="https://app.getwhitewhale.com" className="py-2 text-[15px] font-semibold text-[#1c1c1c]">
+            <a href="https://app.peldot.com" className="py-2 text-[15px] font-semibold text-[#1c1c1c]">
               Login
             </a>
             <Link

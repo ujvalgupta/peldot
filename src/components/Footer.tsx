@@ -25,11 +25,11 @@ const COLUMNS: FooterColumn[] = [
   {
     heading: "Integrations",
     links: [
-      { label: "HubSpot", href: "/integrations/hubspot" },
-      { label: "Salesforce", href: "/integrations/salesforce" },
-      { label: "Slack", href: "/integrations/slack" },
-      { label: "Clay", href: "/integrations/clay" },
-      { label: "MCP/Claude", href: "/integrations/mcp" },
+      { label: "Hubly", href: "/integrations/hubly" },
+      { label: "Forcely", href: "/integrations/forcely" },
+      { label: "Pingr", href: "/integrations/pingr" },
+      { label: "Tablr", href: "/integrations/tablr" },
+      { label: "MCP/Atlas", href: "/integrations/atlas" },
     ],
   },
   {
@@ -52,7 +52,7 @@ export function Footer() {
             <div className="flex items-center gap-2">
               <WhaleMarkIcon className="h-7 w-7" />
               <span className="text-[22px] font-bold tracking-tight text-[#0a0a0a]">
-                WhiteWhale
+                Peldot
               </span>
             </div>
             <p className="mt-4 text-[15px] italic leading-[1.5] text-[#8a8a8a]">

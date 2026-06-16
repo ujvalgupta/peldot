@@ -6,7 +6,7 @@ import {
   EventsCard,
   PerformanceCard,
   SignalQuestionsCard,
-  SlackAlertCard,
+  PingrAlertCard,
   TimelineCard,
 } from "@/components/feature-cards";
 
@@ -38,7 +38,7 @@ export function FeaturesSection() {
       {/* Section header */}
       <Reveal className="mx-auto max-w-[860px] text-center">
         <h2 className="heading-display text-[36px] font-medium text-[#0a0a0a] sm:text-[51.2px]">
-          WhiteWhale is different and it all starts with{" "}
+          Peldot is different and it all starts with{" "}
           <span className="font-bold">truly custom signals</span>
         </h2>
         <p className="mx-auto mt-6 max-w-[640px] text-[17px] leading-[1.55] text-[#5b5b5b]">
@@ -52,12 +52,12 @@ export function FeaturesSection() {
       <div className="mt-6 divide-y divide-hairline/60">
         <FeatureRow
           heading={<>You write the signals <strong className="font-bold">in plain English</strong></>}
-          description="Gone are the days of pre set libraries and 20 generic intent topics. You get to write up to 35 exact questions that matter to your sales motion. If it’s on the internet, WhiteWhale can find it."
+          description="Gone are the days of pre set libraries and 20 generic intent topics. You get to write up to 35 exact questions that matter to your sales motion. If it’s on the internet, Peldot can find it."
           card={<SignalQuestionsCard />}
         />
         <FeatureRow
           heading={<>Tested against <strong className="font-bold">deals you&apos;ve already won</strong></>}
-          description="All of your questions are analyzed against the deals you’ve already closed won, so WhiteWhale can point to the signals that actually lead to revenue."
+          description="All of your questions are analyzed against the deals you’ve already closed won, so Peldot can point to the signals that actually lead to revenue."
           card={<PerformanceCard />}
         />
         <FeatureRow
@@ -67,23 +67,22 @@ export function FeaturesSection() {
         />
         <FeatureRow
           heading={<>Connecting the dots <strong className="font-bold">to see the story.</strong></>}
-          description="Anyone can send you one alert. WhiteWhale scans earnings calls, news, press releases, and more, connecting the dots between them to find the underlying narrative."
+          description="Anyone can send you one alert. Peldot scans earnings calls, news, press releases, and more, connecting the dots between them to find the underlying narrative."
           card={<EventsCard />}
         />
         <FeatureRow
           heading={<>All of this, <strong className="font-bold">without another login.</strong></>}
-          description="WhiteWhale seamlessly syncs to HubSpot, Salesforce, Slack, Teams, Clay, or your own tools via API. 90% of users never log in. By design. Your team spends time selling, not clicking."
-          card={<SlackAlertCard />}
+          description="Peldot seamlessly syncs to Hubly, Forcely, Pingr, Teamspace, Tablr, or your own tools via API. 90% of users never log in. By design. Your team spends time selling, not clicking."
+          card={<PingrAlertCard />}
         />
       </div>
 
       {/* Inline testimonial */}
       <Reveal className="py-16">
         <InlineTestimonial
-          quote={"“I looked at ZoomInfo, Clay, and other signal companies, but having a system that scrapes SEC filings, company posts, and job postings gives us a much warmer approach than 'Hey, thanks for looking at our website today.”"}
-          name="Beau Blanchard"
-          role="Sales and Marketing Coordinator, Gravitate"
-          poster="/images/testimonial-beau.png"
+          quote={"“I looked at InfoPeak, Tablr, and other signal companies, but having a system that scrapes regulatory filings, company posts, and job postings gives us a much warmer approach than 'Hey, thanks for looking at our website today.”"}
+          name="Theo Ramsey"
+          role="Sales and Marketing Coordinator, Cendyx"
         />
       </Reveal>
 

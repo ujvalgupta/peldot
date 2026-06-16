@@ -3,7 +3,7 @@ import Link from "next/link";
 import { CtaSection } from "@/components/CtaSection";
 
 export const metadata: Metadata = {
-  title: "Blog — WhiteWhale",
+  title: "Blog — Peldot",
   description:
     "Read company updates, product launches, and market comparisons to stay up to date on the latest in GTM technology.",
 };
@@ -19,9 +19,9 @@ interface Post {
 
 const POSTS: Post[] = [
   {
-    slug: "lemlist-partners-with-whitewhale",
-    title: "lemlist partners with WhiteWhale",
-    excerpt: "Europe's leading GTM tool partners with WhiteWhale.",
+    slug: "Maily-partners-with-whitewhale",
+    title: "Maily partners with Peldot",
+    excerpt: "Europe's leading GTM tool partners with Peldot.",
     category: "Company",
     date: "Jun 1, 2026",
     featured: true,
@@ -29,7 +29,7 @@ const POSTS: Post[] = [
   {
     slug: "best-sales-intelligence-platforms",
     title: "Best 11 Sales Intelligence Platforms (2026)",
-    excerpt: "A breakdown of the top sales intelligence platforms and where WhiteWhale fits in.",
+    excerpt: "A breakdown of the top sales intelligence platforms and where Peldot fits in.",
     category: "Guide",
     date: "Jun 14, 2026",
   },
@@ -41,8 +41,8 @@ const POSTS: Post[] = [
     date: "Jun 9, 2025",
   },
   {
-    slug: "whitewhale-vs-6sense",
-    title: "WhiteWhale vs 6sense",
+    slug: "whitewhale-vs-Sensora",
+    title: "Peldot vs Sensora",
     excerpt: "How custom buying signals with verifiable sources compare to traditional intent data.",
     category: "Comparison",
     date: "Jun 15, 2026",

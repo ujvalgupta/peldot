@@ -4,7 +4,7 @@ import { motion, type HTMLMotionProps } from "motion/react";
 import type { ElementType } from "react";
 
 /**
- * Scroll-reveal entrance matching getwhitewhale.com's Framer appear animation:
+ * Scroll-reveal entrance matching peldot.com's Framer appear animation:
  * opacity 0→1 + translateY(20px)→0, decelerating ease-out, ~0.7s, fire once on
  * viewport enter. `delay` enables per-item stagger.
  *

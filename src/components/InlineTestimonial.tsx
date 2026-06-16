@@ -1,26 +1,26 @@
-/* eslint-disable @next/next/no-img-element */
 import { PlayIcon } from "@/components/icons";
 
 interface InlineTestimonialProps {
   quote: string;
   name: string;
   role: string;
-  poster: string;
+  /** Optional — retained for API compatibility; avatar is generated from name. */
+  poster?: string;
 }
 
-/** Horizontal testimonial: video poster (left) + quote and attribution (right). */
-export function InlineTestimonial({ quote, name, role, poster }: InlineTestimonialProps) {
+function initials(name: string) {
+  return name.split(" ").map((w) => w[0]).slice(0, 2).join("").toUpperCase();
+}
+
+/** Horizontal testimonial: placeholder avatar (left) + quote and attribution (right). */
+export function InlineTestimonial({ quote, name, role }: InlineTestimonialProps) {
   return (
     <div className="mx-auto flex max-w-[1000px] flex-col items-center gap-8 sm:flex-row sm:items-center sm:gap-10">
       <a
         href="#"
-        className="group relative block w-full max-w-[260px] shrink-0 overflow-hidden rounded-2xl bg-black/5"
+        className="group relative flex aspect-[3/4] w-full max-w-[260px] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-gradient-to-br from-ww-blue to-[#1c1c1c]"
       >
-        <img
-          src={poster}
-          alt={`${name} testimonial`}
-          className="aspect-[3/4] h-auto w-full object-cover"
-        />
+        <span className="text-[56px] font-bold text-white/80">{initials(name)}</span>
         <span className="absolute inset-0 flex items-center justify-center">
           <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/90 shadow-md transition-transform group-hover:scale-105">
             <PlayIcon className="ml-0.5 h-5 w-5 text-[#1c1c1c]" />

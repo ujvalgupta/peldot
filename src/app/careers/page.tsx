@@ -4,15 +4,15 @@ import { CtaSection } from "@/components/CtaSection";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Careers — WhiteWhale",
+  title: "Careers — Peldot",
   description:
-    "WhiteWhale is built for exceptional people, and we want to build with exceptional people. See our values and get in touch.",
+    "Peldot is built for exceptional people, and we want to build with exceptional people. See our values and get in touch.",
 };
 
 const VALUES = [
   {
     title: "Delight, Always",
-    body: "Whether it's product design, a customer email, or an internal Slack message — we believe in creating moments that feel thoughtful, clear, and genuinely enjoyable. The little things matter.",
+    body: "Whether it's product design, a customer email, or an internal Pingr message — we believe in creating moments that feel thoughtful, clear, and genuinely enjoyable. The little things matter.",
   },
   {
     title: "Time Is Not a Ritual",
@@ -33,10 +33,10 @@ export default function CareersPage() {
     <>
       <section className="mx-auto max-w-[1280px] px-5 pt-16 pb-10 text-center sm:px-8 sm:pt-24">
         <h1 className="heading-hero text-[34px] font-bold text-[#0a0a0a] sm:text-[44px] md:text-[52.8px]">
-          Join WhiteWhale
+          Join Peldot
         </h1>
         <p className="mx-auto mt-6 max-w-[620px] text-[18px] leading-[1.5] text-[#5b5b5b]">
-          WhiteWhale is built for exceptional people and we want to build with exceptional people.
+          Peldot is built for exceptional people and we want to build with exceptional people.
         </p>
       </section>
 
@@ -66,8 +66,8 @@ export default function CareersPage() {
         <p className="mx-auto mt-5 max-w-[540px] text-[17px] leading-[1.55] text-[#6b6b6b]">
           We&rsquo;re always on the lookout for smart, curious people who move fast and build things
           that matter. Send your resume or CV to{" "}
-          <a href="mailto:hello@getwhitewhale.com" className="font-semibold text-[#0a0a0a] underline">
-            hello@getwhitewhale.com
+          <a href="mailto:hello@peldot.com" className="font-semibold text-[#0a0a0a] underline">
+            hello@peldot.com
           </a>
           . We&rsquo;d love to hear from you.
         </p>

@@ -64,7 +64,7 @@ export function CheckIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
-/** WhiteWhale whale mark (rounded black square with whale silhouette). */
+/** Peldot whale mark (rounded black square with whale silhouette). */
 export function WhaleMarkIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" {...props}>

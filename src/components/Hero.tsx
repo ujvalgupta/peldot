@@ -25,7 +25,7 @@ export function Hero() {
           <span className="rounded-full bg-[#f3f4f6] px-2.5 py-0.5 text-[12px] font-semibold text-[#0a0a0a]">
             New
           </span>
-          <span className="font-medium text-[#4b4b4b]">BirdDog is now WhiteWhale</span>
+          <span className="font-medium text-[#4b4b4b]">Scout is now Peldot</span>
         </motion.a>
 
         {/* Headline — real site: 52.8px / lh 1.05 / ls -0.05em */}
@@ -42,7 +42,7 @@ export function Hero() {
           {...item(0.16)}
           className="mt-6 max-w-[560px] text-[17px] leading-[1.5] text-[#5b5b5b]"
         >
-          WhiteWhale monitors your accounts for custom signals so your team works
+          Peldot monitors your accounts for custom signals so your team works
           the right accounts at the right time.
         </motion.p>
 
@@ -53,7 +53,7 @@ export function Hero() {
         </motion.div>
 
         <motion.p {...item(0.32)} className="mt-5 text-[14px] text-[#9a9a9a]">
-          See what signals WhiteWhale can find for <span className="font-semibold text-[#7a7a7a]">free</span>
+          See what signals Peldot can find for <span className="font-semibold text-[#7a7a7a]">free</span>
         </motion.p>
       </div>
     </section>

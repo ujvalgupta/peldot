@@ -78,10 +78,10 @@ export function AccountsCard() {
   return (
     <BluePanel>
       <div className="grid grid-cols-2 gap-4">
-        <AccountTile name="Citigroup" badge="3 ACTIVE SIGNALS" />
-        <AccountTile name="Moderna" badge="4 ACTIVE SIGNALS" note="AI platform deployed to 11,000 employees" />
-        <AccountTile name="Caterpillar" badge="2 ACTIVE SIGNALS" />
-        <AccountTile name="ThoughtSpot" discovery note="Not in your CRM — found via signal match" />
+        <AccountTile name="Norvell Financial" badge="3 ACTIVE SIGNALS" />
+        <AccountTile name="Helixa Bio" badge="4 ACTIVE SIGNALS" note="AI platform deployed to 11,000 employees" />
+        <AccountTile name="Forgeline" badge="2 ACTIVE SIGNALS" />
+        <AccountTile name="Clearview Data" discovery note="Not in your CRM — found via signal match" />
       </div>
     </BluePanel>
   );
@@ -105,8 +105,8 @@ function AccountTile({ name, badge, note, discovery }: { name: string; badge?: s
 /* 4 — Connecting the dots event cards */
 export function EventsCard() {
   const events = [
-    { name: "Satellogic", time: "4 days ago", bullets: ["New monitoring satellite launched Feb 2026 — first commercial product, moving out of prototype", "$80M production contract signed May 2026, on top of existing government deal"] },
-    { name: "Citigroup", time: "just now", bullets: ["Internal AI platform deployed to 180,000 employees — company-wide mandate, not a pilot", "New CIO appointed to lead digital transformation, two AI programs already running"] },
+    { name: "Orbital Dynamics", time: "4 days ago", bullets: ["New monitoring satellite launched Feb 2026 — first commercial product, moving out of prototype", "$80M production contract signed May 2026, on top of existing government deal"] },
+    { name: "Norvell Financial", time: "just now", bullets: ["Internal AI platform deployed to 180,000 employees — company-wide mandate, not a pilot", "New CIO appointed to lead digital transformation, two AI programs already running"] },
   ];
   return (
     <BluePanel>
@@ -127,26 +127,26 @@ export function EventsCard() {
   );
 }
 
-/* 5 — Slack alert mock */
-export function SlackAlertCard() {
+/* 5 — Pingr alert mock */
+export function PingrAlertCard() {
   return (
     <BluePanel>
       <div className="rounded-xl bg-white p-5">
-        <p className="mb-4 text-[13px] font-semibold text-[#9a9a9a]">#whitewhale-alerts</p>
+        <p className="mb-4 text-[13px] font-semibold text-[#9a9a9a]">#peldot-alerts</p>
         <div className="flex gap-3">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-[#0a0a0a] text-[18px]">🐋</div>
           <div className="min-w-0">
             <div className="flex items-center gap-2">
-              <span className="text-[15px] font-bold text-[#1c1c1c]">WhiteWhale</span>
+              <span className="text-[15px] font-bold text-[#1c1c1c]">Peldot</span>
               <span className="rounded bg-[#e5e7eb] px-1.5 py-0.5 text-[9px] font-bold uppercase text-[#6b7280]">App</span>
               <span className="text-[12px] text-[#9a9a9a]">4:13 AM</span>
             </div>
-            <p className="mt-1 text-[15px] font-semibold text-[#1c1c1c]">Signal Found: Wex, Inc.</p>
+            <p className="mt-1 text-[15px] font-semibold text-[#1c1c1c]">Signal Found: Finlane, Inc.</p>
             <div className="mt-2 rounded-md bg-[#f3f4f6] px-3 py-2 text-[13px] text-[#5b5b5b]">
               Signal: PLG transition | 1.4x higher win rate
             </div>
             <p className="mt-3 text-[13px] leading-snug text-[#5b5b5b]">
-              Wex&apos;s CEO outlined a <strong className="font-semibold text-[#1c1c1c]">shift from Sales-Led to Product-Led Growth</strong> in a recent press release. The company is <strong className="font-semibold text-[#1c1c1c]">hiring a Head of PLG</strong> and restructuring its go-to-market motion.
+              Finlane&apos;s CEO outlined a <strong className="font-semibold text-[#1c1c1c]">shift from Sales-Led to Product-Led Growth</strong> in a recent press release. The company is <strong className="font-semibold text-[#1c1c1c]">hiring a Head of PLG</strong> and restructuring its go-to-market motion.
             </p>
           </div>
         </div>
@@ -158,7 +158,7 @@ export function SlackAlertCard() {
 /* 6 — Onboarding timeline */
 export function TimelineCard() {
   const steps = [
-    { label: "SIGN UP", color: ACCENT.green, title: "Create signals. Connect integrations", body: "Write the questions that matter. Connect HubSpot, Salesforce, or Slack. Turn on recommendations. Done.", strong: false },
+    { label: "SIGN UP", color: ACCENT.green, title: "Create signals. Connect integrations", body: "Write the questions that matter. Connect Hubly, Forcely, or Pingr. Turn on recommendations. Done.", strong: false },
     { label: "15 MINUTES", color: ACCENT.blue, title: "Ranked accounts. First suggestions", body: "Your accounts are scored and ranked. Suggestions start rolling in — accounts you should be targeting that you haven't heard of yet.", strong: false },
     { label: "HOUR 1", color: "#1c1c1c", title: '"How did I not always do it this way?"', body: "Always accounts to call, context to reference, a reason to reach out. No more scrolling through databases, manual research, or time wasted.", strong: true },
   ];

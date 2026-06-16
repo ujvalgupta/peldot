@@ -16,8 +16,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
-  if (!post) return { title: "Blog — WhiteWhale" };
-  return { title: `${post.title} — WhiteWhale`, description: post.excerpt };
+  if (!post) return { title: "Blog — Peldot" };
+  return { title: `${post.title} — Peldot`, description: post.excerpt };
 }
 
 export default async function BlogPostPage({

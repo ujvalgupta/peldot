@@ -11,17 +11,17 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "WhiteWhale — Custom Buying Signals for Every Account, Every Day",
+  title: "Peldot — Custom Buying Signals for Every Account, Every Day",
   description:
-    "Your reps get custom buying signals with verified sources, not black-box intent data. WhiteWhale monitors your accounts for custom signals so your team works the right accounts at the right time.",
+    "Your reps get custom buying signals with verified sources, not black-box intent data. Peldot monitors your accounts for custom signals so your team works the right accounts at the right time.",
   icons: {
     icon: "/seo/favicon.png",
     apple: "/seo/apple-touch-icon.png",
   },
   openGraph: {
-    title: "WhiteWhale — Custom Buying Signals for Every Account, Every Day",
+    title: "Peldot — Custom Buying Signals for Every Account, Every Day",
     description:
-      "WhiteWhale monitors your accounts for custom signals so your team works the right accounts at the right time.",
+      "Peldot monitors your accounts for custom signals so your team works the right accounts at the right time.",
     type: "website",
   },
 };

@@ -10,7 +10,7 @@ interface CtaButtonProps {
   className?: string;
 }
 
-/** Pill button matching WhiteWhale CTAs: dark primary or bordered outline. */
+/** Pill button matching Peldot CTAs: dark primary or bordered outline. */
 export function CtaButton({
   children,
   href = "/pricing",

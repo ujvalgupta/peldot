@@ -5,16 +5,16 @@ import { Faq } from "@/components/Faq";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Partner Program — WhiteWhale",
+  title: "Partner Program — Peldot",
   description:
-    "Join the WhiteWhale partner program. Earn up to 35% progressive lifetime commissions, qualified inbound leads, and a dedicated internal outreach license.",
+    "Join the Peldot partner program. Earn up to 35% progressive lifetime commissions, qualified inbound leads, and a dedicated internal outreach license.",
 };
 
 const BENEFITS = [
   {
     label: "Platform Access",
     title: "Internal Outreach License",
-    body: "Secure a dedicated WhiteWhale instance to scale your own outbound efforts. Use it internally to track target accounts, identify high-intent prospects, and demonstrate live “Proof of Value” during your sales calls.",
+    body: "Secure a dedicated Peldot instance to scale your own outbound efforts. Use it internally to track target accounts, identify high-intent prospects, and demonstrate live “Proof of Value” during your sales calls.",
   },
   {
     label: "Drive Deals",
@@ -39,7 +39,7 @@ export default function PartnerPage() {
           Join our partner program
         </h1>
         <p className="mx-auto mt-6 max-w-[620px] text-[18px] leading-[1.5] text-[#5b5b5b]">
-          WhiteWhale offers a unique partner program, with up to 30% lifetime commissions. Get paid
+          Peldot offers a unique partner program, with up to 30% lifetime commissions. Get paid
           to promote the best signals.
         </p>
         <div className="mt-9 flex justify-center">

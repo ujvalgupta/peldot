@@ -3,26 +3,26 @@ import Link from "next/link";
 import { CtaSection } from "@/components/CtaSection";
 import { Faq } from "@/components/Faq";
 import { Reveal } from "@/components/Reveal";
-import { SlackAlertCard } from "@/components/feature-cards";
+import { PingrAlertCard } from "@/components/feature-cards";
 
 export const metadata: Metadata = {
-  title: "Customer Stories — WhiteWhale",
+  title: "Customer Stories — Peldot",
   description:
-    "See how modern GTM teams use WhiteWhale's verifiable signals to eliminate noise, accelerate sales cycles, and close significantly larger deals.",
+    "See how modern GTM teams use Peldot's verifiable signals to eliminate noise, accelerate sales cycles, and close significantly larger deals.",
 };
 
 const OPENING_QUOTES = [
   {
     quote:
-      "It's a no-brainer. You close one deal and it's paid for itself. If you try to track this on your own, you're going to miss stuff. You miss a lot less with WhiteWhale.",
-    name: "Justin Ager",
-    role: "Strategic Growth Manager, Kaleris",
+      "It's a no-brainer. You close one deal and it's paid for itself. If you try to track this on your own, you're going to miss stuff. You miss a lot less with Peldot.",
+    name: "Marcus Vale",
+    role: "Strategic Growth Manager, Vantora",
   },
   {
     quote:
-      "I looked at ZoomInfo, Clay, and other signal companies, but having a system that scrapes SEC filings, company posts, and job postings gives us a much warmer approach than 'Hey, thanks for looking at our website today.'",
-    name: "Beau Blanchard",
-    role: "Sales and Marketing Coordinator, Gravitate",
+      "I looked at InfoPeak, Tablr, and other signal companies, but having a system that scrapes regulatory filings, company posts, and job postings gives us a much warmer approach than 'Hey, thanks for looking at our website today.'",
+    name: "Theo Ramsey",
+    role: "Sales and Marketing Coordinator, Cendyx",
   },
 ];
 
@@ -43,21 +43,21 @@ interface Story {
 
 const STORIES: Story[] = [
   {
-    company: "Meridian",
-    person: "JT Bell",
-    role: "Sales Representative, Meridian",
+    company: "Arcwell",
+    person: "Riley Stone",
+    role: "Sales Representative, Arcwell",
     quote:
-      "WhiteWhale helped us stop chasing digital noise and start seeing real opportunity. It's like having a radar that tells you when and where to make your move.",
+      "Peldot helped us stop chasing digital noise and start seeing real opportunity. It's like having a radar that tells you when and where to make your move.",
     metrics: [
       { value: "5 DAYS", caption: "TO ROI AFTER SIGNING UP FOR WHITEWHALE." },
       { value: "2,800", caption: "ACCOUNTS PRIORITIZED IN JUST 24 HOURS." },
     ],
-    href: "/customer-stories/meridian-business-case-study",
+    href: "/customer-stories/arcwell-case-study",
   },
   {
-    company: "Bitdrift",
-    person: "Conner Slater",
-    role: "Account Executive, Bitdrift",
+    company: "Quantel",
+    person: "Devin Hart",
+    role: "Account Executive, Quantel",
     quote:
       "It's so easy to use. I truly cannot highlight that point enough. This is the information you need, right where you need it and when you need it. Don't hesitate to try it out.",
     metrics: [
@@ -66,9 +66,9 @@ const STORIES: Story[] = [
     ],
   },
   {
-    company: "Simpli",
-    person: "Nicholas de la Guardia",
-    role: "GTM Lead, Simpli",
+    company: "Lumeo",
+    person: "Adrian Cole",
+    role: "GTM Lead, Lumeo",
     quote:
       "Even just within our ICP, there are so many accounts that I had never heard of before. It's been cool even when I thought I already had a decent grasp of our ICP.",
     metrics: [
@@ -104,7 +104,7 @@ export default function CustomerStoriesPage() {
           Customer Stories
         </h1>
         <p className="mx-auto mt-6 max-w-[680px] text-[18px] leading-[1.5] text-[#5b5b5b]">
-          See how modern GTM teams use WhiteWhale&rsquo;s verifiable signals to eliminate noise,
+          See how modern GTM teams use Peldot&rsquo;s verifiable signals to eliminate noise,
           accelerate sales cycles, and close significantly larger deals.
         </p>
       </section>
@@ -146,7 +146,7 @@ export default function CustomerStoriesPage() {
           </div>
           <p className="mx-auto mt-12 max-w-[760px] text-center text-[16px] leading-[1.6] text-[#6b6b6b]">
             Why are the results so good? When you reach out to the right account at the right time,
-            everything accelerates. Instead of relying on vague intent scores, WhiteWhale scans
+            everything accelerates. Instead of relying on vague intent scores, Peldot scans
             multiple signals to find the underlying narrative, giving your reps the exact reason an
             account is ready to buy today.
           </p>
@@ -206,7 +206,7 @@ export default function CustomerStoriesPage() {
             ROI measured <span className="font-bold">in minutes, not quarters.</span>
           </h2>
           <p className="mx-auto mt-5 max-w-[560px] text-[17px] leading-[1.55] text-[#6b6b6b]">
-            Don&rsquo;t wait months for signals. WhiteWhale is designed to generate actionable
+            Don&rsquo;t wait months for signals. Peldot is designed to generate actionable
             pipeline in your first 15 minutes.
           </p>
         </Reveal>
@@ -243,7 +243,7 @@ export default function CustomerStoriesPage() {
             </Link>
           </Reveal>
           <Reveal delay={0.08}>
-            <SlackAlertCard />
+            <PingrAlertCard />
           </Reveal>
         </div>
       </section>

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — WhiteWhale",
-  description: "WhiteWhale Privacy Policy.",
+  title: "Privacy Policy — Peldot",
+  description: "Peldot Privacy Policy.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
         { heading: "Cookies and Tracking", body: "Explains cookie use for understanding user behavior and allowing browser-level management of preferences." },
         { heading: "Third-Party Links", body: "Disclaims responsibility for the privacy practices of external websites." },
         { heading: "Changes to This Policy", body: "Details notification procedures when updates occur, via effective-date changes and communications." },
-        { heading: "Contact Us", body: "Provides contact email: hello@getwhitewhale.com." },
+        { heading: "Contact Us", body: "Provides contact email: hello@peldot.com." },
       ]}
     />
   );

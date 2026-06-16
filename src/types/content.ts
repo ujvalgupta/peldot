@@ -1,4 +1,4 @@
-/** Shared content types for the WhiteWhale clone. */
+/** Shared content types for the Peldot clone. */
 
 export interface NavLink {
   label: string;

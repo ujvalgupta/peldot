@@ -1,28 +1,27 @@
-/* eslint-disable @next/next/no-img-element */
+// Placeholder customer wordmarks (fictional). Rendered as text, not real logos.
 const LOGOS = [
-  { name: "haven", src: "/images/logos/haven.png", h: 24 },
-  { name: "demandDrive", src: "/images/logos/demanddrive.png", h: 22 },
-  { name: "parcellogix", src: "/images/logos/parcellogix.png", h: 22 },
-  { name: "meridian", src: "/images/logos/meridian.png", h: 34 },
-  { name: "ELLINGSON", src: "/images/logos/ellingson.png", h: 20 },
-  { name: "swyft", src: "/images/logos/swyft.png", h: 26 },
-  { name: "DOSS", src: "/images/logos/doss.svg", h: 24 },
-  { name: "Kaleris", src: "/images/logos/kaleris.png", h: 22 },
+  "Vantora",
+  "Northwind",
+  "Parcyl",
+  "Arcwell",
+  "Corventis",
+  "Swyftly",
+  "Doxa",
+  "Nuvio",
 ];
 
 export function LogoStrip() {
   return (
     <section className="border-y border-hairline/60">
       <div className="mx-auto max-w-[1280px] px-5 py-7 sm:px-8">
-        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 sm:justify-between sm:gap-x-6">
-          {LOGOS.map((logo) => (
-            <img
-              key={logo.name}
-              src={logo.src}
-              alt={logo.name}
-              style={{ height: logo.h }}
-              className="w-auto opacity-50 grayscale"
-            />
+        <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-5 sm:justify-between sm:gap-x-6">
+          {LOGOS.map((name) => (
+            <span
+              key={name}
+              className="text-[18px] font-bold tracking-tight text-[#9a9a9a] opacity-70 sm:text-[20px]"
+            >
+              {name}
+            </span>
           ))}
         </div>
       </div>
