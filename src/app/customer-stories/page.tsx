@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaSection } from "@/components/CtaSection";
+import { Faq } from "@/components/Faq";
 import { Reveal } from "@/components/Reveal";
 import { SlackAlertCard } from "@/components/feature-cards";
 
@@ -246,6 +247,8 @@ export default function CustomerStoriesPage() {
           </Reveal>
         </div>
       </section>
+
+      <Faq />
 
       <CtaSection />
     </>
