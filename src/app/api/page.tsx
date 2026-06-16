@@ -54,7 +54,7 @@ export default function ApiPage() {
     <>
       {/* Hero */}
       <section className="mx-auto max-w-[1280px] px-5 pt-16 pb-12 text-center sm:px-8 sm:pt-24">
-        <h1 className="heading-display mx-auto max-w-[860px] text-[40px] font-bold text-[#0a0a0a] sm:text-[56px] md:text-[60px]">
+        <h1 className="heading-hero mx-auto max-w-[760px] text-[34px] font-bold text-[#0a0a0a] sm:text-[44px] md:text-[52.8px]">
           The most advanced and accurate signal API data.
         </h1>
         <p className="mx-auto mt-6 max-w-[680px] text-[18px] leading-[1.5] text-[#5b5b5b]">

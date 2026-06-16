@@ -54,7 +54,7 @@ export default function BlogPage() {
   return (
     <>
       <section className="mx-auto max-w-[900px] px-5 pt-16 pb-10 text-center sm:px-8 sm:pt-24">
-        <h1 className="heading-display text-[42px] font-bold text-[#0a0a0a] sm:text-[56px]">
+        <h1 className="heading-hero text-[34px] font-bold text-[#0a0a0a] sm:text-[44px] md:text-[52.8px]">
           Everything you need to know.
         </h1>
         <p className="mx-auto mt-6 max-w-[620px] text-[18px] leading-[1.5] text-[#5b5b5b]">
@@ -84,7 +84,10 @@ export default function BlogPage() {
         </Link>
 
         {/* Grid */}
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
+        <h2 className="mt-14 mb-6 text-[15px] font-bold uppercase tracking-[0.08em] text-[#9a9a9a]">
+          More Updates
+        </h2>
+        <div className="grid gap-6 md:grid-cols-3">
           {rest.map((post) => (
             <Link
               key={post.slug}

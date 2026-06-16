@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaSection } from "@/components/CtaSection";
+import { Faq } from "@/components/Faq";
+import { Reveal } from "@/components/Reveal";
+import { InlineTestimonial } from "@/components/InlineTestimonial";
 import { CheckIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
@@ -48,21 +51,24 @@ const FEATURES: { label: string; values: [string, string, string] }[] = [
     values: ["Instant Self-Setup", "Self-Setup + Founder Support", "Custom Setup + Founder Support"],
   },
   { label: "Seats", values: ["Unlimited", "Unlimited", "Unlimited"] },
-  { label: "Active Accounts", values: ["Up to 300", "Up to 750", "1,000–5,000+"] },
+  { label: "Active Accounts", values: ["Up to 300 (tracked weekly)", "Up to 750 (tracked weekly)", "1,000–5,000+"] },
   { label: "Custom Signals", values: ["✓", "✓", "✓"] },
   { label: "Account Suggestions", values: ["✓", "✓", "✓"] },
   { label: "“Why Now” Narrative Generation", values: ["✓", "✓", "✓"] },
   { label: "Closed-Won Signal Analysis", values: ["✓", "✓", "✓"] },
-  { label: "Slack / Teams Alerts", values: ["✓", "✓", "✓"] },
+  { label: "Slack Alerts (+ Microsoft Teams Available)", values: ["✓", "✓", "✓"] },
   { label: "CRM Sync (HubSpot / Salesforce)", values: ["✓", "✓", "✓"] },
   { label: "API Access", values: ["✓", "✓", "✓"] },
+  { label: "Custom Source Scraping", values: ["✓", "✓", "✓"] },
+  { label: "Delivery Frequency", values: ["Weekly", "Daily Available", "Daily Available"] },
+  { label: "Support", values: ["Tutorial videos/docs + Call", "Tutorial videos/docs + Call", "Tutorial videos/docs + Call"] },
 ];
 
 export default function PricingPage() {
   return (
     <>
       <section className="mx-auto max-w-[1280px] px-5 pt-16 pb-10 text-center sm:px-8 sm:pt-24">
-        <h1 className="heading-display mx-auto max-w-[820px] text-[42px] font-bold text-[#0a0a0a] sm:text-[56px] md:text-[60px]">
+        <h1 className="heading-hero mx-auto max-w-[680px] text-[34px] font-bold text-[#0a0a0a] sm:text-[44px] md:text-[52.8px]">
           Unlimited users, one flat monthly fee
         </h1>
         <p className="mx-auto mt-6 max-w-[640px] text-[18px] leading-[1.5] text-[#5b5b5b]">
@@ -166,14 +172,35 @@ export default function PricingPage() {
       </section>
 
       {/* Testimonial */}
-      <section className="mx-auto max-w-[760px] px-5 pb-8 text-center sm:px-8">
-        <blockquote className="text-[24px] font-medium leading-[1.4] text-[#0a0a0a] sm:text-[30px]">
-          “It&apos;s a no-brainer. You close one deal and it&apos;s paid for itself. If you track
-          this yourself, you miss stuff.”
-        </blockquote>
-        <p className="mt-5 text-[15px] font-bold text-[#0a0a0a]">Justin Ager</p>
-        <p className="text-[14px] text-[#7a7a7a]">Strategic Growth Manager, Kaleris</p>
-      </section>
+      <Reveal as="section" className="mx-auto max-w-[1080px] px-5 py-12 sm:px-8 sm:py-16">
+        <InlineTestimonial
+          quote={"“It's a no-brainer. You close one deal and it's paid for itself. If you try to track this on your own, you're going to miss stuff. You miss a lot less with WhiteWhale.”"}
+          name="Justin Ager"
+          role="Strategic Growth Manager, Kaleris"
+          poster="/images/testimonial-justin.png"
+        />
+      </Reveal>
+
+      {/* GTM Agency partner banner */}
+      <Reveal as="section" className="mx-auto max-w-[1080px] px-5 pb-12 sm:px-8">
+        <div className="flex flex-col items-start gap-6 rounded-2xl bg-surface-alt p-8 sm:flex-row sm:items-center sm:justify-between sm:p-10">
+          <div className="max-w-[640px]">
+            <h2 className="text-[22px] font-bold text-[#0a0a0a] sm:text-[26px]">GTM Agency?</h2>
+            <p className="mt-3 text-[16px] leading-[1.55] text-[#5b5b5b]">
+              Build your clients&rsquo; automated outbound pipelines on WhiteWhale&rsquo;s
+              infrastructure. Multi-tenant management, API routing, and dedicated technical support.
+            </p>
+          </div>
+          <Link
+            href="/partner"
+            className="inline-flex shrink-0 items-center justify-center rounded-md bg-[#1c1c1c] px-6 py-3 text-[14px] font-semibold text-white transition-opacity hover:opacity-90"
+          >
+            Apply for Partner Program
+          </Link>
+        </div>
+      </Reveal>
+
+      <Faq />
 
       <CtaSection />
     </>

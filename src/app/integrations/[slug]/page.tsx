@@ -156,7 +156,7 @@ export default async function IntegrationPage({
         <span className="mb-6 inline-block rounded-full border border-hairline bg-white px-4 py-1.5 text-[13px] font-medium text-[#4b4b4b]">
           {data.name} Integration
         </span>
-        <h1 className="heading-display mx-auto max-w-[820px] text-[40px] font-bold text-[#0a0a0a] sm:text-[54px] md:text-[58px]">
+        <h1 className="heading-hero mx-auto max-w-[760px] text-[34px] font-bold text-[#0a0a0a] sm:text-[44px] md:text-[52.8px]">
           {data.heading}
         </h1>
         <p className="mx-auto mt-6 max-w-[660px] text-[18px] leading-[1.5] text-[#5b5b5b]">
