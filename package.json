@@ -7,14 +7,10 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "turbo dev",
-    "build": "turbo build",
-    "lint": "turbo lint",
-    "typecheck": "turbo typecheck",
-    "check": "turbo check"
-  },
-  "devDependencies": {
-    "turbo": "^2"
+    "dev": "npm run dev --workspace=@peldot/web",
+    "build": "npm run build --workspace=@peldot/web",
+    "lint": "npm run lint --workspace=@peldot/web",
+    "typecheck": "npm run typecheck --workspace=@peldot/web"
   },
   "engines": {
     "node": ">=24"
