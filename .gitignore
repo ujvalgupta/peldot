@@ -1,13 +1,16 @@
-# Dependencies
+# Dependencies (root and all workspaces)
 node_modules/
 .pnp
 .pnp.js
 
-# Build
+# Build outputs (all workspaces)
 .next/
 out/
 build/
 dist/
+
+# Turborepo
+.turbo/
 
 # Environment
 .env
