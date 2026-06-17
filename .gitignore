@@ -38,8 +38,10 @@ next-env.d.ts
 # Vercel
 .vercel
 
-# Local Claude Code settings (not project config)
-.claude/settings.local.json
+# Claude Code and agent scaffolding (tooling-only, not project code)
+.claude/
+.agents/
+skills-lock.json
 
 # Local temp files
 temp/
