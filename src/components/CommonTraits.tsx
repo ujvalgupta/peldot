@@ -27,7 +27,7 @@ export function CommonTraits() {
 
         <div className="mt-14 grid gap-10 md:grid-cols-3 md:gap-8">
           {TRAITS.map((t, i) => (
-            <Reveal key={t.title} delay={i * 0.08}>
+            <Reveal key={t.title} index={i}>
               <h3 className="text-[19px] font-bold leading-snug text-[#0a0a0a]">{t.title}</h3>
               <p className="mt-3 text-[16px] leading-[1.55] text-[#6b6b6b]">{t.body}</p>
             </Reveal>

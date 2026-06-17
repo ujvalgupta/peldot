@@ -1,42 +1,12 @@
 import { Reveal } from "@/components/Reveal";
 import { PlayIcon } from "@/components/icons";
-
-interface Card {
-  overlayName: string;
-  quote: string;
-  name: string;
-  role: string;
-  stats: { value: string; caption: string }[];
-}
+import { TESTIMONIALS } from "@/content/testimonials";
 
 function initials(name: string) {
   return name.split(" ").map((w) => w[0]).slice(0, 2).join("").toUpperCase();
 }
 
-const CARDS: Card[] = [
-  {
-    overlayName: "Devin Hart",
-    quote:
-      "“It's so easy to use. I truly cannot highlight that point enough. This is the information you need, right where you need it and when you need it. Don't hesitate to try it out.”",
-    name: "Devin Hart",
-    role: "Account Executive, Quantel",
-    stats: [
-      { value: "300+", caption: "ACCOUNTS RANKED" },
-      { value: "13 Signals", caption: "IN THE FIRST TWO WEEKS" },
-    ],
-  },
-  {
-    overlayName: "Adrian Cole",
-    quote:
-      "“Even just within our ICP, there are so many accounts that I had never heard of before. It's been cool even when I thought I already had a decent grasp of our ICP.”",
-    name: "Adrian Cole",
-    role: "GTM Lead, Lumeo",
-    stats: [
-      { value: "30 minutes", caption: "TO FIRST SUGGESTIONS" },
-      { value: "279 accounts", caption: "SUGGESTIONS FOUND" },
-    ],
-  },
-];
+const CARDS = TESTIMONIALS.filter((t) => t.featuredOnHome);
 
 export function Testimonials() {
   return (
@@ -48,7 +18,7 @@ export function Testimonials() {
 
       <div className="mt-14 grid gap-8 md:grid-cols-2">
         {CARDS.map((c, i) => (
-          <Reveal key={c.name} delay={i * 0.08}>
+          <Reveal key={c.name} index={i}>
             <a href="#" className="group relative flex aspect-video items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-ww-blue to-[#1c1c1c]">
               <span className="text-[64px] font-bold text-white/80">{initials(c.name)}</span>
               <span className="absolute inset-0 flex items-center justify-center">
@@ -57,16 +27,16 @@ export function Testimonials() {
                 </span>
               </span>
               <span className="absolute bottom-3 left-3 text-[12px] font-medium text-white/90 drop-shadow">
-                {c.overlayName}
+                {c.name}
               </span>
             </a>
 
-            <p className="mt-6 text-[17px] leading-[1.5] text-[#1c1c1c]">{c.quote}</p>
+            <p className="mt-6 text-[17px] leading-[1.5] text-[#1c1c1c]">&ldquo;{c.quote}&rdquo;</p>
             <p className="mt-4 text-[15px] font-bold text-[#0a0a0a]">{c.name}</p>
             <p className="text-[14px] text-[#7a7a7a]">{c.role}</p>
 
             <div className="mt-6 grid grid-cols-2 gap-4 border-t border-hairline pt-5">
-              {c.stats.map((s) => (
+              {c.metrics.map((s) => (
                 <div key={s.caption}>
                   <p className="text-[24px] font-bold text-ww-accent-blue">{s.value}</p>
                   <p className="mt-1 text-[11px] font-medium uppercase tracking-[0.04em] text-[#9a9a9a]">

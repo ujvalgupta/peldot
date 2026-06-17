@@ -51,7 +51,7 @@ export default function CareersPage() {
         </Reveal>
         <div className="grid gap-6 sm:grid-cols-2">
           {VALUES.map((v, i) => (
-            <Reveal key={v.title} delay={i * 0.06} className="rounded-2xl border border-hairline bg-white p-8">
+            <Reveal key={v.title} index={i} stagger={0.06} className="rounded-2xl border border-hairline bg-white p-8">
               <h3 className="text-[20px] font-bold text-[#0a0a0a]">{v.title}</h3>
               <p className="mt-3 text-[15px] leading-[1.6] text-[#6b6b6b]">{v.body}</p>
             </Reveal>

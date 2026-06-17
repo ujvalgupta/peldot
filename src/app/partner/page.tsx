@@ -64,7 +64,7 @@ export default function PartnerPage() {
         </Reveal>
         <div className="grid gap-6 md:grid-cols-3">
           {BENEFITS.map((b, i) => (
-            <Reveal key={b.title} delay={i * 0.08} className="rounded-2xl border border-hairline bg-white p-8">
+            <Reveal key={b.title} index={i} className="rounded-2xl border border-hairline bg-white p-8">
               <span className="text-[12px] font-bold uppercase tracking-[0.08em] text-ww-accent-blue">
                 {b.label}
               </span>

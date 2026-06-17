@@ -4,6 +4,7 @@ import { CtaSection } from "@/components/CtaSection";
 import { Faq } from "@/components/Faq";
 import { Reveal } from "@/components/Reveal";
 import { PingrAlertCard } from "@/components/feature-cards";
+import { TESTIMONIALS } from "@/content/testimonials";
 
 export const metadata: Metadata = {
   title: "Customer Stories — Peldot",
@@ -32,57 +33,12 @@ const ROI_STATS = [
   { value: "+29%", caption: "Better Close Rate" },
 ];
 
-interface Story {
-  company: string;
-  person: string;
-  role: string;
-  quote: string;
-  metrics: { value: string; caption: string }[];
-  href?: string;
-}
-
-const STORIES: Story[] = [
-  {
-    company: "Arcwell",
-    person: "Riley Stone",
-    role: "Sales Representative, Arcwell",
-    quote:
-      "Peldot helped us stop chasing digital noise and start seeing real opportunity. It's like having a radar that tells you when and where to make your move.",
-    metrics: [
-      { value: "5 DAYS", caption: "TO ROI AFTER SIGNING UP FOR PELDOT." },
-      { value: "2,800", caption: "ACCOUNTS PRIORITIZED IN JUST 24 HOURS." },
-    ],
-    href: "/customer-stories/arcwell-case-study",
-  },
-  {
-    company: "Quantel",
-    person: "Devin Hart",
-    role: "Account Executive, Quantel",
-    quote:
-      "It's so easy to use. I truly cannot highlight that point enough. This is the information you need, right where you need it and when you need it. Don't hesitate to try it out.",
-    metrics: [
-      { value: "300+", caption: "ACCOUNTS RANKED" },
-      { value: "13 Signals", caption: "IN THE FIRST TWO WEEKS" },
-    ],
-  },
-  {
-    company: "Lumeo",
-    person: "Adrian Cole",
-    role: "GTM Lead, Lumeo",
-    quote:
-      "Even just within our ICP, there are so many accounts that I had never heard of before. It's been cool even when I thought I already had a decent grasp of our ICP.",
-    metrics: [
-      { value: "30 minutes", caption: "TO FIRST SUGGESTIONS" },
-      { value: "279 accounts", caption: "SUGGESTIONS FOUND" },
-    ],
-  },
-];
 
 const TIMELINE = [
   {
     step: "01",
     title: "Minute 1: See your signals",
-    body: "Click ‘See Your Signals’ to get a curated list of pre-researched buying triggers built specifically for your business for free, then select a plan and create your account.",
+    body: "Click 'See Your Signals' to get a curated list of pre-researched buying triggers built specifically for your business for free, then select a plan and create your account.",
   },
   {
     step: "05",
@@ -113,8 +69,8 @@ export default function CustomerStoriesPage() {
       <section className="mx-auto max-w-[1080px] px-5 pb-12 sm:px-8">
         <div className="grid gap-6 md:grid-cols-2">
           {OPENING_QUOTES.map((q, i) => (
-            <Reveal key={q.name} delay={i * 0.08} className="rounded-2xl border border-hairline bg-white p-8">
-              <p className="text-[18px] leading-[1.5] text-[#1c1c1c]">“{q.quote}”</p>
+            <Reveal key={q.name} index={i} className="rounded-2xl border border-hairline bg-white p-8">
+              <p className="text-[18px] leading-[1.5] text-[#1c1c1c]">"{q.quote}"</p>
               <p className="mt-5 text-[15px] font-bold text-[#0a0a0a]">{q.name}</p>
               <p className="text-[14px] text-[#7a7a7a]">{q.role}</p>
             </Reveal>
@@ -136,7 +92,7 @@ export default function CustomerStoriesPage() {
           </Reveal>
           <div className="mt-12 grid gap-8 sm:grid-cols-3">
             {ROI_STATS.map((s, i) => (
-              <Reveal key={s.caption} delay={i * 0.08} className="text-center">
+              <Reveal key={s.caption} index={i} className="text-center">
                 <p className="heading-display text-[44px] font-bold text-ww-accent-blue sm:text-[56px]">
                   {s.value}
                 </p>
@@ -167,15 +123,15 @@ export default function CustomerStoriesPage() {
       {/* Story cards */}
       <section className="mx-auto max-w-[1080px] px-5 pb-8 sm:px-8">
         <div className="grid gap-6">
-          {STORIES.map((s, i) => (
-            <Reveal key={s.company} delay={i * 0.06}>
+          {TESTIMONIALS.map((s, i) => (
+            <Reveal key={s.company} index={i} stagger={0.06}>
               <div className="grid gap-8 rounded-2xl border border-hairline bg-white p-8 sm:p-10 md:grid-cols-[1.4fr_1fr] md:items-center">
                 <div>
                   <p className="text-[13px] font-bold uppercase tracking-[0.08em] text-ww-accent-blue">
                     {s.company}
                   </p>
-                  <p className="mt-4 text-[20px] leading-[1.45] text-[#1c1c1c]">“{s.quote}”</p>
-                  <p className="mt-5 text-[15px] font-bold text-[#0a0a0a]">{s.person}</p>
+                  <p className="mt-4 text-[20px] leading-[1.45] text-[#1c1c1c]">&ldquo;{s.quote}&rdquo;</p>
+                  <p className="mt-5 text-[15px] font-bold text-[#0a0a0a]">{s.name}</p>
                   <p className="text-[14px] text-[#7a7a7a]">{s.role}</p>
                   {s.href && (
                     <Link href={s.href} className="mt-4 inline-block text-[14px] font-semibold text-ww-accent-blue hover:underline">
@@ -212,7 +168,7 @@ export default function CustomerStoriesPage() {
         </Reveal>
         <div className="grid gap-6 md:grid-cols-3">
           {TIMELINE.map((t, i) => (
-            <Reveal key={t.step} delay={i * 0.08} className="rounded-2xl border border-hairline bg-white p-8">
+            <Reveal key={t.step} index={i} className="rounded-2xl border border-hairline bg-white p-8">
               <p className="heading-display text-[40px] font-bold text-ww-accent-blue">{t.step}</p>
               <h3 className="mt-3 text-[17px] font-bold text-[#0a0a0a]">{t.title}</h3>
               <p className="mt-2 text-[14px] leading-[1.55] text-[#6b6b6b]">{t.body}</p>
